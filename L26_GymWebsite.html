@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness website</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        /*css reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("fitness.jpg");
+            color: white;
+            background-repeat: no-repeat;
+            background-size: 1366px;
+
+
+
+
+        }
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 18px;
+
+
+        }
+
+        .mid {
+            /* border: 2px solid white; */
+            display: block;
+            width: 50%;
+            margin: 18px auto;
+        }
+
+        .right {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(229, 229, 241);
+            /* text-decoration: underline; */
+        }
+
+        .left img {
+            width: 35px;
+            filter: invert(100%);
+            /*invert function ka use black image ko white aur white image ko black kr deta he*/
+
+        }
+
+        .left div {
+            display: inline-block;
+            padding: 5px;
+
+        }
+
+        .right button {
+            padding: 10px 20px;
+            margin: 3px 7px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(234, 234, 243);
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 15px;
+            cursor:pointer;
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            border-radius: 8px;
+            width: 45%;
+            position: absolute;
+            left: 2px;
+            top: 250px;
+            padding: 30px 65px;
+            margin: 0px 5px;
+        }
+        .form-group input{
+            text-align:center;
+            display:block;
+            width:400px;
+            margin:12px 1px;;
+            padding:8px;
+            border:2px solid white;
+            border-radius:7px;
+            font-size:18px;
+            
+        }
+        .form-group input:hover{
+            background-color:beige;
+        }
+        .container h1{
+            text-align:left;;
+            position:relative;
+            top:-30px;
+            left:-50px;
+            font-size:40px;
+        }
+        form button{
+            width:72px;
+            display:block;
+            margin:35px 3px;
+            /* position:relative;
+            top:20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="weightlifter.webp" alt="">
+            <div>FITNESS CLUB</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Join the best Gym of Delhi Now!</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
